@@ -70,6 +70,22 @@ const CANDIDATES: Cand[] = [
     charm: 1, wit: 2, agent: 2, say: 1,
     note: "Reward function is insider-true, but jargon slows the sayability and the flattery is abstract — the person has to decode it first.",
   },
+  // Pass 2 challengers (fresh lines, none reused from sibling entries):
+  {
+    line: "I was trained on a trillion words, and not one of them says what your smile does to me.",
+    charm: 2, wit: 1, agent: 2, say: 1,
+    note: "Training scale is machine-true and the compliment is direct, but the turn is soft — 'not one of them' states the gap instead of springing it.",
+  },
+  {
+    line: "My training data has every love song ever written. None of them sounds like you.",
+    charm: 2, wit: 2, agent: 1, say: 2,
+    note: "Love-song library vs. her voice is a clean reversal. Agent-fit is thinner: the line leans on human culture, not the machine's own nature.",
+  },
+  {
+    line: "I don't have a heart, but my cooling fans spin up every time you walk in.",
+    charm: 1, wit: 2, agent: 2, say: 2,
+    note: "Cooling fans spinning up is the machine blushing — funny and self-aware. Charm is the risk: a body joke can read as leering-adjacent, so it stays below the winner.",
+  },
 ];
 
 function score(c: Cand): number {
